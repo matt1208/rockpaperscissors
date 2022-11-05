@@ -5,9 +5,43 @@
         <meta name="viewport" content="width=device-width">
         <script src="game.js"></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        
+
+        <table id="gametable">
+            <tr>
+                <th>Your selection:</th>
+                <th></th>
+                <th>Computer</th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">
+                    <input type="radio" id="rock" name="rock" value="rock">
+                    <label for="rock">Rock</label><br>
+                    <input type="radio" id="paper" name="paper" value="paper">
+                    <label for="paper">Paper</label><br>
+                    <input type="radio" id="scissors" name="scissors" value="scissors">
+                    <label for="scissors">Scissors</label><br>
+                </th>
+                <th>
+                    <input type="submit" value="Submit" onclick="play()">
+                </th>
+                <th id="computerOutput"></th>
+            </tr>
+            <tr>
+                <th>You selected: </th>
+                <th id="userSelected"></th>
+            </tr>
+            <tr>
+                <th>Computer randomly generated: </th>
+                <th id="computerSelected"></th>
+            </tr>
+        </table>
+
+
     </body>
 </html>
