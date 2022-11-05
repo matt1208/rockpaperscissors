@@ -23,6 +23,8 @@ function play() {
     playerChoice();
     var random = Math.floor(Math.random()*3);
     computerResult = option[random];
+    gameCount++;
+    document.getElementById("historysection").innerHTML = gameCount;
     document.getElementById("computerOutput").innerHTML = computerResult;
     document.getElementById("userSelected").innerHTML = player;
     document.getElementById("computerSelected").innerHTML = computerResult;
