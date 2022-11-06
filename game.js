@@ -17,13 +17,20 @@ function playerChoice() {
         player = "Rock";
     } else if(document.getElementById("paper").checked) {
         player = "Paper";
-    } else {
+    } else if(document.getElementById("scissors").checked) {
         player = "Scissors";
+    } else {
+        window.alert("You must select one to play.");
+
     }
 }
 
 function play() {
     playerChoice();
+    // Seeing if the user still hasn't picked and stopping the function
+    if(player === ""){
+        exitFunc("User must select an option");
+    }
     // Decide Comp
     var random = Math.floor(Math.random()*3);
     computerResult = option[random];
