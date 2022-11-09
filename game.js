@@ -11,6 +11,9 @@ var gameCount = 0;
 var compRock = 0;
 var compPaper = 0;
 var compScissors = 0;
+var playerRock = 0;
+var playerPaper = 0;
+var playerScissors = 0;
 
 function playerChoice() {
     if(document.getElementById('rock').checked) {
@@ -49,6 +52,11 @@ function play() {
     document.getElementById("rocksection").innerHTML = compRock;
     document.getElementById("papersection").innerHTML = compPaper;
     document.getElementById("scissorssection").innerHTML = compScissors;
+    // Player Choices
+    playerChoiceCalc(player);
+    document.getElementById("procksection").innerHTML = playerRock;
+    document.getElementById("ppapersection").innerHTML = playerPaper;
+    document.getElementById("pscissorssection").innerHTML = playerScissors;
 }
 
 function compare(player, computerResult) {
@@ -88,5 +96,15 @@ function compChoiceCalc(computerResult) {
         compPaper++;
     } else {
         compScissors++;
+    }
+}
+
+function playerChoiceCalc(player) {
+    if(player === "Rock") {
+        playerRock++;
+    } else if(player === "Paper"){
+        playerPaper++;
+    } else {
+        playerScissors++;
     }
 }
