@@ -1,5 +1,5 @@
 var name = window.prompt("Please enter your name?");
-document.write(name + ", Welcome to Rock Paper Scissors!");
+document.write('<p id="jstext">' + name + ', Welcome to Rock Paper Scissors!</p>');
 var option = ["Rock", "Paper", "Scissors"];
 var player = "";
 var computerResult = "";
