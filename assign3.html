@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width">
         <script src="game.js"></script>
         <link rel="stylesheet" href="game.css">
+        <script src="confetti.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -28,7 +29,7 @@
                     <label for="scissors">Scissors</label><br>
                 </th>
                 <th>
-                    <input type="submit" value="Submit" onclick="play()">
+                    <input type="submit" value="Play" onclick="play()" id="button">
                 </th>
                 <th id="computerOutput"></th>
             </tr>
@@ -43,8 +44,9 @@
         </table>
 
         <div id="result"></div>
+
         <div id="history">
-            <p>History: You have played a total of: <span id="historysection"></span> </p>
+            <p>History: You have played a total of: <span id="historysection"></span> times</p>
         </div>
         <div id="comphistory">
             <p>Computer's History: Rock: <span id="rocksection"></span> Paper: <span id="papersection" ></span> Scissors: <span id="scissorssection"></span></p>

@@ -1,7 +1,44 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #1F271B;
+    color: white;
+    text-align: center;
+    font-size: 18px;
 }
 
-table, th, td {
+ th, td {
     border: 1px solid;
+    padding: 10px;
   }
+
+table {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#button {
+    background-color: #E36414;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    width: 150px;
+    height: 50px;
+    border: none;  
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#button input[type=submit]:hover {
+    cursor: pointer;
+    background-color: none;
+    border: 3px solid #E36414;
+}
+
+#result {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+}
